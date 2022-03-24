@@ -17,3 +17,24 @@
   .liftOffAnimation:hover {
     transform: translate3d(0px, -2px, 0px);
   }
+
+
+  .product-slider{
+    max-height: 190px;
+    border: 1px solid white;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .product-slider::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .product-element{
+    min-width: 180px;
+    height: 180;
+    line-height: 110px;
+    text-align: center;
+  }
+
+  
