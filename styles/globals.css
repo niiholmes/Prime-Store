@@ -20,10 +20,11 @@
 
 
   .product-slider{
-    max-height: 190px;
+    max-height: 200px;
     border: 1px solid white;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .product-slider::-webkit-scrollbar{
@@ -32,6 +33,26 @@
 
   .product-element{
     min-width: 180px;
+    height: 180;
+    line-height: 110px;
+    text-align: center;
+  }
+
+
+  .item-slider{
+    max-height: 640px;
+    border: 1px solid white;
+    display: flex;
+    overflow-x: auto;
+    overflow-y:hidden
+  }
+
+  .item-slider::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .item-element{
+    min-width: 270px;
     height: 180;
     line-height: 110px;
     text-align: center;

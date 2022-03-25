@@ -5,19 +5,7 @@ const products = [
     },
     {
       img: "/assets/y500.jpeg",
-      item: "Phones",
-    },
-    {
-      img: "/assets/y500.jpeg",
       item: "Apparels",
-    },
-    {
-      img: "/assets/y500.jpeg",
-      item: "Books",
-    },
-    {
-      img: "/assets/y500.jpeg",
-      item: "TVs",
     },
     {
       img: "/assets/y500.jpeg",
@@ -25,11 +13,23 @@ const products = [
     },
     {
       img: "/assets/y500.jpeg",
+      item: "Phones",
+    },
+    {
+      img: "/assets/y500.jpeg",
       item: "Laptops",
     },
     {
       img: "/assets/y500.jpeg",
-      item: "Accessories",
+      item: "TVs",
+    },
+    {
+      img: "/assets/y500.jpeg",
+      item: "Accesories",
+    },
+    {
+      img: "/assets/y500.jpeg",
+      item: "Books",
     },
     {
       img: "/assets/y500.jpeg",

@@ -2,9 +2,10 @@ import Head from "next/head";
 import DisplayCard from "../components/displayCard";
 import DisplayCardMini from "../components/displayCardMini";
 import products from "../data/products";
-
-
-
+import items from "../data/items";
+import HelpCard from "../components/helpCard";
+import HelpCardMini from "../components/helpCardMini";
+import QuickLinks from "../components/quickLinks";
 
 export default function Home() {
   return (
@@ -25,19 +26,42 @@ export default function Home() {
         ))}
       </div>
 
-      <h6 className="text-2xl mt-12 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
           Take a look at what's new, right now.
         </span>
       </h6>
-      {/* <div className=" grid grid-cols-5 gap-28 w-full overflow-x-auto">
       {
-        items.map((item) => (
-          <DisplayCard title ={item.title} brief={item.brief}/>
-        ))
+        <div className="item-slider">
+          {items.map((item) => (
+            <DisplayCard
+              product_name={item.product_name}
+              brief={item.brief}
+              price={item.price}
+              image={item.image}
+              tagline={item.tagline}
+            />
+          ))}
+        </div>
       }
-      </div> */}
+      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
+        Help is here.
+        <span className="text-gray-400">
+          Whenever and however you need it.
+        </span>
+      </h6>
+      <div className="grid grid-cols-2 item-slider">
+      <HelpCard/>
+      <HelpCardMini/>
+      </div>
+
+      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
+        Quick Links
+      </h6>
+      <div className="product-slider">
+      <QuickLinks/>
+      </div>
       
     </div>
   );

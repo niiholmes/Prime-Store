@@ -1,14 +1,15 @@
 import Link from "next/link";
 
-const DisplayCard = ({title, brief}) => {
+const DisplayCard = ({ product_name, brief, tagline, image, price }) => {
   return (
-    <div>
+    <div className="item-element mr-4 bg-white w-10/12 h-46 hover:shadow-3xlg rounded-lg mt-20 liftOffAnimation p-5">
       <Link href="#">
         <a>
-          <div className="bg-gray-800 w-10/12 h-96 hover:shadow-2xlg rounded-lg mt-10 liftOffAnimation">
-            <h4>{title}</h4>
-            <h4>{brief}</h4>
-          </div>
+          <h4 className="text-gray-400 text-xs">{product_name}</h4>
+          <h4 className="font-bold mt-2 text-xl">{tagline}</h4>
+          <h4 className="mt-1 text-xl font-light">{brief}</h4>
+          <h4 className="text-xl font-light">{price}</h4>
+          <img src={image} alt="products" className="object-fill p-0 " />
         </a>
       </Link>
     </div>
