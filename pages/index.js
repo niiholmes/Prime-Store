@@ -33,7 +33,7 @@ export default function Home() {
       <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
-          Take a look at what's new, right now.
+          Take a look at what is new, right now.
         </span>
       </h6>
       {
