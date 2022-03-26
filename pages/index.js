@@ -22,7 +22,7 @@ export default function Home() {
       </h4>
       <div className=" product-slider">
         {products.map((product) => (
-          <DisplayCardMini img={product.img} item={product.item} />
+          <DisplayCardMini img={product.img} item={product.item} key={product.id} />
         ))}
       </div>
 
@@ -36,6 +36,7 @@ export default function Home() {
         <div className="item-slider">
           {items.map((item) => (
             <DisplayCard
+            key={item.id}
               product_name={item.product_name}
               brief={item.brief}
               price={item.price}
