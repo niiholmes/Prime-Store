@@ -4,6 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      tablet: '768px',
+      desktop: '1025px',
+    },
     extend: {},
   },
   plugins: [],

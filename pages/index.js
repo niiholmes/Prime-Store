@@ -26,7 +26,7 @@ export default function Home() {
         ))}
       </div>
 
-      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
           Take a look at what's new, right now.
@@ -45,18 +45,18 @@ export default function Home() {
           ))}
         </div>
       }
-      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         Help is here.
         <span className="text-gray-400">
           Whenever and however you need it.
         </span>
       </h6>
-      <div className="grid grid-cols-2 item-slider">
+      <div className="grid grid-cols-2 item-slider ">
       <HelpCard/>
       <HelpCardMini/>
       </div>
 
-      <h6 className="text-2xl mt-4 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-4 text-slate-800 font-medium tablet:mt-12">
         Quick Links
       </h6>
       <div className="product-slider">

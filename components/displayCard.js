@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const DisplayCard = ({ product_name, brief, tagline, image, price }) => {
   return (
-    <div className="item-element mr-4 bg-white w-10/12 h-46 hover:shadow-3xlg rounded-lg mt-20 liftOffAnimation p-5">
+    <div className="item-element mr-4 bg-white w-10/12 h-46 hover:shadow-3xlg rounded-lg mt-10 liftOffAnimation p-5">
       <Link href="#">
         <a>
           <h4 className="text-gray-400 text-xs">{product_name}</h4>
