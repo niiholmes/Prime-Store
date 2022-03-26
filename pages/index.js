@@ -22,7 +22,11 @@ export default function Home() {
       </h4>
       <div className=" product-slider">
         {products.map((product) => (
-          <DisplayCardMini img={product.img} item={product.item} key={product.id} />
+          <DisplayCardMini
+            img={product.img}
+            item={product.item}
+            key={product.id}
+          />
         ))}
       </div>
 
@@ -36,7 +40,7 @@ export default function Home() {
         <div className="item-slider">
           {items.map((item) => (
             <DisplayCard
-            key={item.id}
+              key={item.id}
               product_name={item.product_name}
               brief={item.brief}
               price={item.price}
@@ -48,22 +52,19 @@ export default function Home() {
       }
       <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         Help is here.
-        <span className="text-gray-400">
-          Whenever and however you need it.
-        </span>
+        <span className="text-gray-400">Whenever and however you need it.</span>
       </h6>
       <div className="grid grid-cols-2 item-slider ">
-      <HelpCard/>
-      <HelpCardMini/>
+        <HelpCard />
+        <HelpCardMini />
       </div>
 
       <h6 className="text-2xl mt-4 text-slate-800 font-medium tablet:mt-12">
         Quick Links
       </h6>
       <div className="product-slider">
-      <QuickLinks/>
+        <QuickLinks />
       </div>
-      
     </div>
   );
 }
