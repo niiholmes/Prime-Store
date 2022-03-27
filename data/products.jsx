@@ -11,37 +11,37 @@ const products = [
     },
     {
       id:'3',
-      img: "/assets/y500.jpeg",
+      img: "/assets/rolex.jpeg",
       item: "Watches",
     },
     {
       id:'4',
-      img: "/assets/y500.jpeg",
+      img: "/assets/iphone12.jpeg",
       item: "Phones",
     },
     {
       id:'5',
-      img: "/assets/y500.jpeg",
+      img: "/assets/mac.jpeg",
       item: "Laptops",
     },
     {
       id:'6',
-      img: "/assets/y500.jpeg",
+      img: "/assets/tv.jpeg",
       item: "TVs",
     },
     {
       id:'7',
-      img: "/assets/y500.jpeg",
+      img: "/assets/accessories.jpeg",
       item: "Accesories",
     },
     {
       id:'8',
-      img: "/assets/y500.jpeg",
+      img: "/assets/books.jpeg",
       item: "Books",
     },
     {
       id:'9',
-      img: "/assets/y500.jpeg",
+      img: "/assets/fv.jpeg",
       item: "Fruits & Vegetables",
     },
     
