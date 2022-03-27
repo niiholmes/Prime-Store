@@ -21,10 +21,10 @@
 
   .product-slider{
     max-height: 200px;
-    border: 1px solid white;
+    border: 1px solid rgb(77, 70, 70);
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
+
   }
 
   .product-slider::-webkit-scrollbar{
@@ -34,7 +34,6 @@
   .product-element{
     min-width: 180px;
     height: 180;
-    line-height: 110px;
     text-align: center;
   }
 

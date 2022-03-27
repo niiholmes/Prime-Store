@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const DisplayCardMini = ({ img, item }) => {
   return (
-    <div className="product-element mt-14 mr-4">
+    <div className="product-element mt-10 mr-4">
       <Link href="#">
         <a>
-          <img src={img} alt="products" className="object-fill  h-fit  " />
-          <h4 className="text-center text-xs p-2">{item}</h4>
+          <Image src={img} width={390} height={264} alt="products" className="object-fill  " />
+          <h4 className="text-center text-xs mb-7 ">{item}</h4>
         </a>
       </Link>
     </div>
