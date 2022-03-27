@@ -20,7 +20,7 @@
 
 
   .product-slider{
-    max-height: 240px;
+    max-height: 340px;
     border: 1px solid white;
     display: flex;
     overflow-x: auto;
