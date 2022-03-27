@@ -6,7 +6,7 @@ const products = [
     },
     {
       id:'2',
-      img: "/assets/y500.jpeg",
+      img: "/assets/apparel.jpeg",
       item: "Apparels",
     },
     {
