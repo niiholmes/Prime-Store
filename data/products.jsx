@@ -11,7 +11,7 @@ const products = [
     },
     {
       id:'3',
-      img: "/assets/rolex.jpeg",
+      img: "/assets/aw.jpeg",
       item: "Watches",
     },
     {
