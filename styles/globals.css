@@ -39,7 +39,6 @@
 
   .item-slider{
     max-height: 640px;
-    border: 1px solid white;
     display: flex;
     overflow-x: auto;
     overflow-y:hidden
@@ -52,7 +51,6 @@
   .item-element{
     min-width: 270px;
     height: 180;
-    line-height: 110px;
     text-align: center;
   }
 

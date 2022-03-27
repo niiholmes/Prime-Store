@@ -1,15 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const DisplayCard = ({ product_name, brief, tagline, image, price }) => {
   return (
-    <div className="item-element mr-4 bg-white w-10/12 h-46 hover:shadow-3xlg rounded-lg mt-10 liftOffAnimation p-5">
+    <div className="item-element mr-4 bg-white w-10/12 h-45 hover:shadow-3xlg rounded-lg mt-10 liftOffAnimation pt-5">
       <Link href="#">
         <a>
           <h4 className="text-gray-400 text-xs">{product_name}</h4>
           <h4 className="font-bold mt-2 text-xl">{tagline}</h4>
           <h4 className="mt-1 text-xl font-light">{brief}</h4>
-          <h4 className="text-xl font-light">{price}</h4>
-          <img src={image} alt="products" className="object-fill p-0 " />
+          <h4 className="text-xl font-light pb-10">{price}</h4>
+          <Image src={image} width={600} height={404} alt="products" className="" />
         </a>
       </Link>
     </div>
