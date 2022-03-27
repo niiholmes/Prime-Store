@@ -21,7 +21,6 @@
 
   .product-slider{
     max-height: 200px;
-    border: 1px solid rgb(77, 70, 70);
     display: flex;
     overflow-x: auto;
 
