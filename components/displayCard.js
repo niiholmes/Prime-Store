@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+//import items from "../data/items"
 
-const DisplayCard = ({ product_name, brief, tagline, image, price }) => {
+const DisplayCard = ({ product_name,slug, brief, tagline, image, price }) => {
   return (
     <div className="item-element mr-4 bg-white w-10/12 h-45 hover:shadow-3xlg rounded-lg mt-10 liftOffAnimation pt-5">
-      <Link href="#">
+      <Link href={`/item/${slug}`}>
         <a>
           <h4 className="text-gray-400 text-xs">{product_name}</h4>
           <h4 className="font-bold mt-2 text-xl">{tagline}</h4>
@@ -14,7 +15,7 @@ const DisplayCard = ({ product_name, brief, tagline, image, price }) => {
         </a>
       </Link>
     </div>
-  );
+  ); 
 };
 
 export default DisplayCard;

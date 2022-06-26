@@ -14,7 +14,7 @@ export default function Home() {
         <title>Prime/Store</title>
       </Head>
 
-      <h4 className="text-3xl text-slate-800 font-medium">
+      <h4 className="text-3xl mt-14 text-slate-800 font-medium">
         Prime Store.{" "}
         <span className="text-gray-400">
           The best place to buy the things you love.
@@ -41,6 +41,7 @@ export default function Home() {
           {items.map((item) => (
             <DisplayCard
               key={item.id}
+              slug={item.slug}
               product_name={item.product_name}
               brief={item.brief}
               price={item.price}
