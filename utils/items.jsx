@@ -5,7 +5,7 @@ const items = [
     product_name: "IPHONE 13 PRO",
     tagline: "Oh. So. Pro.",
     brief: "Now in Alpine Blue",
-    price: "$1000",
+    price: 1000,
     image: "/assets/iphone13.jpeg",
     description:
       "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis."
@@ -17,10 +17,10 @@ const items = [
     product_name: "ADIDAS YEEZYS 500",
     tagline: "Rat. Race. On.",
     brief: "Now in Sulphur Salt",
-    price: "$500",
+    price: 500,
     image: "/assets/r500.jpeg",
     description:
-      "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.",
+    "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis."
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ const items = [
     product_name: "SAMSUNG LASER TV",
     tagline: "Laser. Thin",
     brief: "Now in Prime Stores",
-    price: "$5000",
+    price: 5000,
     image: "/assets/tv.jpeg",
     description:
     "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis."
@@ -39,7 +39,7 @@ const items = [
     product_name: "FRUITS & VEGETABLES",
     tagline: "Full of natural goodness.",
     brief: "Now in Prime Stores",
-    price: "From $10",
+    price: 10,
     image: "/assets/fv.jpeg",
     description:
     "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis."

@@ -1,14 +1,18 @@
 import Head from "next/head";
 import DisplayCard from "../components/displayCard";
 import DisplayCardMini from "../components/displayCardMini";
-import products from "../data/products";
-import items from "../data/items";
+import products from "../utils/products";
+import items from "../utils/items";
 import HelpCard from "../components/helpCard";
 import HelpCardMini from "../components/helpCardMini";
 import QuickLinks from "../components/quickLinks";
+import db from "../utils/db";
+import Item from "../models/Item";
 
-export default function Home() {
+export default function Home(props) {
+  const {items} = props;
   return (
+
     <div>
       <Head>
         <title>Prime/Store</title>
@@ -68,4 +72,16 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+
+export async function getServerSideProps(){
+  await db.connect();
+  const items = await Item.find({}).lean();
+  await db.disconnect();
+  return{
+    props:{
+      items: items.map(db.convertDocToObj),
+    }
+  }
 }
