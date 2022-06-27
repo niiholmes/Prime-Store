@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import items from "../../utils/items";
+// import items from "../../utils/items";
 import Item from "../../models/Item";
 import db from "../../utils/db";
 
