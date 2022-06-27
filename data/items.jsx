@@ -7,6 +7,7 @@ const items = [
     brief: "Now in Alpine Blue",
     price: "$1000",
     image: "/assets/iphone13.jpeg",
+    description: "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur."
   },
 
   {
@@ -17,6 +18,7 @@ const items = [
     brief: "Now in Sulphur Salt",
     price: "$500",
     image: "/assets/r500.jpeg",
+    description: "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur."
   },
   {
     id:'3',
@@ -26,6 +28,7 @@ const items = [
     brief: "Now in Prime Stores",
     price: "$5000",
     image: "/assets/tv.jpeg",
+    description: "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.",
   },
   {
     id:'4',
@@ -35,6 +38,7 @@ const items = [
     brief: "Now in Prime Stores",
     price: "From $10",
     image: "/assets/fv.jpeg",
+    description: "loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur."
   },
 
 ];

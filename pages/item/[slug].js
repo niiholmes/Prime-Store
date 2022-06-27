@@ -16,7 +16,7 @@ const ItemPage = () => {
         <a>BACK</a>
       </Link>
 
-      <div className="grid grid-cols-1 mt-14">
+      <div className="grid grid-cols-1 mt-14 rounded-bl-2xl  ">
         <div className="">
           <Image
             src={item.image}
@@ -26,18 +26,21 @@ const ItemPage = () => {
             className=""
           />
         </div>
-        <div>
-          <h4>{item.product_name}</h4>
-          <h4>{item.id}</h4>
-          <h4>{item.tagline}</h4>
-          
-        </div>
+       
       </div>
 
+      <div className=" mt-7 font-medium ">
+          <h4 className="text-center text-gray-500 mb-4">{item.product_name}</h4>
+          <h4 className="font-bold pl-4 mb-1">{item.price}</h4>
+          <h4 className="font-bold pl-4">Description:</h4>
+          <h4 className="text-xs text-justify p-4">{item.description}</h4>
+          <h4 className="pl-4 text-xs text-gray-400">{item.tagline}</h4>
+          
+        </div>
       <div className="mt-4 text-center">
-      <h4>Price: {item.price}</h4>
+     
         <Link href="#">
-          <a><button className="bg-slate-400 rounded-2xl  p-2 text-center text-sm">
+          <a><button className="mb-14 bg-slate-300 rounded-3xl  p-3 ml-28 text-xs ">
             ADD TO CART
           </button></a>
         </Link>
