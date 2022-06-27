@@ -32,7 +32,7 @@ const ItemPage = () => {
       <div className=" mt-7 font-medium ">
           <h4 className="text-center text-gray-500 mb-4">{item.product_name}</h4>
           <h4 className="font-bold pl-4 mb-1">{item.price}</h4>
-          <h4 className="font-bold pl-4">Description:</h4>
+          <h4 className="font-bold pl-4 ">Description:</h4>
           <h4 className="text-xs text-justify p-4">{item.description}</h4>
           <h4 className="pl-4 text-xs text-gray-400">{item.tagline}</h4>
           
