@@ -1,16 +1,15 @@
 import Head from "next/head";
 import DisplayCard from "../components/displayCard";
 import DisplayCardMini from "../components/displayCardMini";
-import products from "../utils/products";
-import items from "../utils/items";
+import data from "../utils/data";
 import HelpCard from "../components/helpCard";
 import HelpCardMini from "../components/helpCardMini";
 import QuickLinks from "../components/quickLinks";
-import db from "../utils/db";
-import Item from "../models/Item";
+// import db from "../utils/db";
+// import Item from "../models/Item";
 
-export default function Home(props) {
-  const {items} = props;
+export default function Home() {
+  // const {items} = props;
   return (
 
     <div>
@@ -25,11 +24,11 @@ export default function Home(props) {
         </span>
       </h4>
       <div className=" product-slider">
-        {products.map((product) => (
+        {data.categories.map((category) => (
           <DisplayCardMini
-            img={product.img}
-            item={product.item}
-            key={product.id}
+            img={category.img}
+            item={category.item}
+            key={category.id}
           />
         ))}
       </div>
@@ -42,15 +41,15 @@ export default function Home(props) {
       </h6>
       {
         <div className="item-slider">
-          {items.map((item) => (
+          {data.products.map((product) => (
             <DisplayCard
-              key={item.id}
-              slug={item.slug}
-              product_name={item.product_name}
-              brief={item.brief}
-              price={item.price}
-              image={item.image}
-              tagline={item.tagline}
+              key={product.id}
+              slug={product.slug}
+              product_name={product.product_name}
+              brief={product.brief}
+              price={product.price}
+              image={product.image}
+              tagline={product.tagline}
             />
           ))}
         </div>
@@ -72,16 +71,16 @@ export default function Home(props) {
       </div>
     </div>
   );
-}
+}  
 
 
-export async function getServerSideProps(){
-  await db.connect();
-  const items = await Item.find({}).lean();
-  await db.disconnect();
-  return{
-    props:{
-      items: items.map(db.convertDocToObj),
-    }
-  }
-}
+// export async function getServerSideProps(){
+//   await db.connect();
+//   const items = await Item.find({}).lean();
+//   await db.disconnect();
+//   return{
+//     props:{
+//       items: items.map(db.convertDocToObj),
+//     }
+//   }
+// }

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-//import items from "../data/items"
+//import data from "../utils/data"
 
 const DisplayCard = ({ product_name,slug, brief, tagline, image, price }) => {
+
   return (
     <div className="item-element mr-4 bg-white w-10/12 h-45 hover:shadow-3xlg rounded-lg mt-10 liftOffAnimation pt-5">
-      <Link href={`/item/${slug}`}>
+      <Link href={`/product/${slug}`}>
         <a>
           <h4 className="text-gray-400 text-xs">{product_name}</h4>
           <h4 className="font-bold mt-2 text-xl">{tagline}</h4>
