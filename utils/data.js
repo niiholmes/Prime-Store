@@ -74,7 +74,7 @@ const data = {
       img: '/assets/fav.JPG',
       item: 'Fruits & Vegetables',
       width: 300,
-      height: 500
+      height: 460
 
 
     },
@@ -88,7 +88,7 @@ const data = {
       tagline: 'Oh. So. Pro.',
       brief: 'Now in Alpine Blue',
       price: 1000,
-      image: '/assets/iphone13.jpeg',
+      image: '/assets/iphone_13.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
       countInStock: 10,
@@ -96,36 +96,36 @@ const data = {
 
     {
       id: '2',
-      slug: 'yeezy-500',
-      product_name: 'ADIDAS YEEZYS 500',
+      slug: 'yeezy-700',
+      product_name: 'ADIDAS YEEZYS 700',
       tagline: 'Rat. Race. On.',
       brief: 'Now in Sulphur Salt',
       price: 500,
-      image: '/assets/r500.jpeg',
+      image: '/assets/yzy_top2.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
       countInStock: 10,
     },
     {
       id: '3',
-      slug: 'samsung-lazer-tv',
-      product_name: 'SAMSUNG LASER TV',
+      slug: 'sapiens-book',
+      product_name: 'SAPIENS',
       tagline: 'Laser. Thin',
       brief: 'Now in Prime Stores',
       price: 5000,
-      image: '/assets/tv.jpeg',
+      image: '/assets/sapiens.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
       countInStock: 10,
     },
     {
       id: '4',
-      slug: 'fruits-and-vegetables',
-      product_name: 'FRUITS & VEGETABLES',
+      slug: 'bell_pepper',
+      product_name: 'BELL PEPPER',
       tagline: 'Full of natural goodness.',
       brief: 'Now in Prime Stores',
       price: 10,
-      image: '/assets/fv.jpeg',
+      image: '/assets/yzy_top.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
       countInStock: 10,

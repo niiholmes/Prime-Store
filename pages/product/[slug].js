@@ -26,17 +26,17 @@ const addToCartHandler = () => {
 }
 
   return (
-    <div className="mt-7 text-sm font-bold">
+    <div className="mt-7 text-sm my-5 mx-5 font-bold">
       <Link href="/">
         <a>back</a>
       </Link>
 
-      <div className="grid grid-cols-1 mt-14 rounded-bl-2xl  ">
+      <div className="grid grid-cols-1  rounded-2xl my-5 mx-5 ">
         <div className="">
           <Image
             src={product.image}
-            width={600}
-            height={404}
+            width={400}
+            height={504}
             alt="products"
             className=""
           />
@@ -46,17 +46,17 @@ const addToCartHandler = () => {
 
       <div className=" mt-7 font-medium ">
           <h1 className="text-center text-gray-500 mb-4">{product.product_name}</h1>
-          <h4 className="font-bold pl-4 mb-1">{product.price}</h4>
+          <h4 className="font-bold pl-4 mb-1 font-mono text-yellow-600">${product.price}</h4>
           <h4 className="font-bold pl-4 ">Description:</h4>
-          <h4 className="text-xs text-justify p-4">{product.description}</h4>
+          <h4 className="text-xs text-justify p-4 text-gray-400">{product.description}</h4>
           <h4 className="pl-4 text-xs text-gray-400">{product.tagline}</h4>
           
         </div>
-      <div className="mt-4 text-center">
+      <div className="my-14  w-full text-center">
      
         <Link href="#">
-          <a><button className="mb-10 bg-slate-300 rounded-3xl  p-3 ml-28 text-xs " onClick={addToCartHandler}>
-            ADD TO CART
+          <a><button className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs " onClick={addToCartHandler}>
+            ADD TO BAG
           </button></a>
         </Link>
       </div>

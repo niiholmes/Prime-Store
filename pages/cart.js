@@ -15,13 +15,13 @@ export default function CartPage() {
     dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
   };
   return (
-    <div>
-      <Link className="mt-7 text-xs font-bold" href="/">
-        <a className="">back to shopping</a>
+    <div className='my-5 mx-5'>
+      <Link className=" text-xs font-bold" href="/">
+        <a className=" font-bold text-xs">back to shopping</a>
       </Link>
       <h1 className="mb-10 text-sm text-right mr-5 mt-5 ">Review your Bag</h1>
       {cartItems.length === 0 ? (
-        <div>
+        <div className='text-center text-xs'>
           Bag is empty. <Link href="/">Go shopping</Link>
         </div>
       ) : (
@@ -31,13 +31,13 @@ export default function CartPage() {
               <div key={item.slug} className="">
                 <Link href={`/product/${item.slug}`}>
                   <a className="">
-                    <h1 className="text-sm mb-7">{item.product_name}</h1>
+                    <h1 className="text-sm mb-5 text-center">{item.product_name}</h1>
 
                     <Image
                       src={item.image}
                       alt={item.name}
-                      width={600}
-                      height={404}
+                      width={400}
+                      height={504}
                     ></Image>
                   </a>
                 </Link>
@@ -54,14 +54,16 @@ export default function CartPage() {
               </div>
             ))}
           </div>
-          <div className="">
+          <div className="text-center">
             Subtotal({cartItems.reduce((a, c) => a + c.quantity, 0)}) : ${' '}
             {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
           </div>
+          <div className='text-center'>
           <a><button 
-          onClick ={() => router.push('/shipping')}className="mb-10 bg-slate-300 rounded-3xl  p-3 ml-28 text-xs " >
+          onClick ={() => router.push('/shipping')}className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs mt-10 " >
             CHECK OUT
           </button></a>
+          </div>
         </div>
       )}
     </div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Pins({ img, item, width, height}) {
   return (
     <>
-      <div className=" mt-5 mx-1 p-0 rounded-2xl  drop-shadow-sm  hover:drop-shadow-xl ">
+      <div className=" mt-5 mx-1 p-0 rounded-2xl  drop-shadow-sm  hover:drop-shadow-lg ">
         <Link href="#">
           <a>
             <Image
