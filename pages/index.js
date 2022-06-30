@@ -1,36 +1,34 @@
-import Head from "next/head";
-import DisplayCard from "../components/displayCard";
-import DisplayCardMini from "../components/displayCardMini";
-import data from "../utils/data";
-import HelpCard from "../components/helpCard";
-import HelpCardMini from "../components/helpCardMini";
-import QuickLinks from "../components/quickLinks";
-// import db from "../utils/db";
-// import Item from "../models/Item";
+import Head from 'next/head';
+import DisplayCard from '../components/displayCard';
+// import DisplayCardMini from '../components/displayCardMini';
+import data from '../utils/data';
+import HelpCard from '../components/helpCard';
+import HelpCardMini from '../components/helpCardMini';
+import QuickLinks from '../components/quickLinks';
+import PinLayout from '../components/pinLayout';
 
 export default function Home() {
-  // const {items} = props;
   return (
-
     <div>
       <Head>
         <title>Prime/Store</title>
       </Head>
 
-      <h4 className="text-3xl mt-14 text-slate-800 font-medium">
-        Prime Store.{" "}
+      <h4 className="text-3xl ml-2 mt-14 text-slate-800 font-medium">
+        Prime Store.{' '}
         <span className="text-gray-400">
           The best place to buy the things you love.
         </span>
       </h4>
-      <div className=" product-slider">
-        {data.categories.map((category) => (
+      <div className="">
+        {/* {data.categories.map((category) => (
           <DisplayCardMini
             img={category.img}
             item={category.item}
             key={category.id}
           />
-        ))}
+        ))} */}
+        <PinLayout/>
       </div>
 
       <h6 className="text-2xl mt-10 text-slate-800 font-medium">
@@ -54,6 +52,7 @@ export default function Home() {
           ))}
         </div>
       }
+      
       <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         Help is here.
         <span className="text-gray-400">Whenever and however you need it.</span>
@@ -71,8 +70,7 @@ export default function Home() {
       </div>
     </div>
   );
-}  
-
+}
 
 // export async function getServerSideProps(){
 //   await db.connect();

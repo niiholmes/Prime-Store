@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import {  useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import { Store } from '../utils/Store';
 
 export default function CartPage() {
+  const router = useRouter
   const { state, dispatch } = useContext(Store);
   const {
     cart: { cartItems },
@@ -42,16 +44,24 @@ export default function CartPage() {
                 <div className="flex justify-evenly mt-5">
                   <h4 className=" text-sm f"> {item.quantity}</h4>
                   <h4 className=" text-sm ">$ {item.price}</h4>
-                  <h4  className=" mr-5  text-sm font-bold mb-7 " onClick={() => removeItemHandler(item)}>
+                  <h4
+                    className=" mr-5  text-sm font-bold mb-7 "
+                    onClick={() => removeItemHandler(item)}
+                  >
                     Remove item
                   </h4>
                 </div>
-                
-                 
-                
               </div>
             ))}
           </div>
+          <div className="">
+            Subtotal({cartItems.reduce((a, c) => a + c.quantity, 0)}) : ${' '}
+            {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
+          </div>
+          <a><button 
+          onClick ={() => router.push('/shipping')}className="mb-10 bg-slate-300 rounded-3xl  p-3 ml-28 text-xs " >
+            CHECK OUT
+          </button></a>
         </div>
       )}
     </div>

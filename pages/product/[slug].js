@@ -7,7 +7,7 @@ import { Store } from "../../utils/Store";
 
 const ProductPage = () => {
   const {state, dispatch} = useContext(Store);
-  const router = useRouter();
+  // const router = useRouter();
   const {query} = useRouter();
   const {slug} = query;
   const product = data.products.find((x) => x.slug === slug);
@@ -21,7 +21,7 @@ const addToCartHandler = () => {
   const oldItem = state.cart.cartItems.find((x) => x.slug === product.slug);
   const quantity = oldItem ? oldItem.quantity +1 : 1;
   dispatch({type: 'CART_ADD_ITEM', payload: { ...product, quantity}});
-  router.push('/cart');
+  // router.push('/cart');
 
 }
 
