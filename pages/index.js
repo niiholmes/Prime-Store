@@ -5,7 +5,8 @@ import data from '../utils/data';
 import HelpCard from '../components/helpCard';
 import HelpCardMini from '../components/helpCardMini';
 import QuickLinks from '../components/quickLinks';
-import PinLayout from '../components/pinLayout';
+
+import Pins from '../components/pins';
 
 export default function Home() {
   return (
@@ -20,18 +21,20 @@ export default function Home() {
           The best place to buy the things you love.
         </span>
       </h4>
-      <div className="">
-        {/* {data.categories.map((category) => (
-          <DisplayCardMini
+      <div style={pin_container} className="grid grid-cols-2 w-screen m-0 p-0 ">
+        {data.categories.map((category) => (
+          <Pins
             img={category.img}
             item={category.item}
             key={category.id}
+            size={category.size}
+            width={category.width}
+            height={category.height}
           />
-        ))} */}
-        <PinLayout/>
+        ))}
       </div>
 
-      <h6 className="text-2xl mt-10 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-0 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
           Take a look at what is new, right now.
@@ -52,7 +55,7 @@ export default function Home() {
           ))}
         </div>
       }
-      
+
       <h6 className="text-2xl mt-10 text-slate-800 font-medium">
         Help is here.
         <span className="text-gray-400">Whenever and however you need it.</span>
@@ -71,6 +74,10 @@ export default function Home() {
     </div>
   );
 }
+
+const pin_container = {
+  gridAutoRows: '10px',
+};
 
 // export async function getServerSideProps(){
 //   await db.connect();
