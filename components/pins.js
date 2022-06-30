@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Pins({ img, dimensions, item, size, width, height }) {
+export default function Pins({ img, item, size, width, height }) {
   return (
     <>
       <div
