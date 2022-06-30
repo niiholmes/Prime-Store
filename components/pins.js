@@ -6,7 +6,7 @@ export default function Pins({ img, item, size, width, height }) {
   return (
     <>
       <div
-        className=" my-4 mx-2 p-0 rounded-2xl bg-white hover:shadow-3xlg liftOffAnimation"
+        className=" my-4 mx-2 p-0 rounded-2xl bg-white drop-shadow-lg  hover:drop-shadow-xl liftOffAnimation"
         style={{ ...styles[size] }}
       >
         <Link href="#">
