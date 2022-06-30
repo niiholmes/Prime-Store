@@ -6,7 +6,7 @@ export default function Pins({ img, item, size, width, height }) {
   return (
     <>
       <div
-        className="my-8  mx-2 p-0 rounded-2xl bg-slate-400 hover:shadow-3xlg liftOffAnimation"
+        className=" my-4 mx-2 p-0 rounded-2xl bg-white hover:shadow-3xlg liftOffAnimation"
         style={{ ...styles[size] }}
       >
         <Link href="#">
@@ -16,11 +16,11 @@ export default function Pins({ img, item, size, width, height }) {
               width={width}
               height={height}
               alt="categories"
-              className=""
+              className="object-contain"
             />
           </a>
         </Link>
-        <h4 className="text-center text-xs z-10 m-0 ">{item}</h4>
+        <h4 className="text-center text-xs relative bottom-4 z-10  ">{item}</h4>
     
       </div>
       </>
@@ -29,12 +29,12 @@ export default function Pins({ img, item, size, width, height }) {
 
 const styles = {
   small: {
-    gridRowEnd: 'span 26',
+    gridRowEnd: 'span 8',
   },
   medium: {
-    gridRowEnd: 'span 33',
+    gridRowEnd: 'span 10',
   },
   large: {
-    gridRowEnd: 'span 45',
+    gridRowEnd: 'span 12',
   },
 };

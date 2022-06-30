@@ -6,7 +6,7 @@ const data = {
       item: 'Sneakers',
       size: 'small',
       width:390,
-      height:644
+      height:344
     },
     {
       id: '2',
@@ -14,7 +14,7 @@ const data = {
       item: 'Apparels',
       size: 'medium',
       width:390,
-      height:837
+      height:437
     },
     {
       id: '3',
@@ -22,7 +22,7 @@ const data = {
       item: 'Watches',
       size: 'large',
       width:390,
-      height:1164
+      height:564
     },
     {
       id: '4',
@@ -30,7 +30,7 @@ const data = {
       item: 'Phones',
       size: 'small',
       width:390,
-      height:644
+      height:344
     },
     {
       id: '5',
@@ -38,7 +38,7 @@ const data = {
       item: 'Laptops',
       size: 'medium',
       width:390,
-      height:837
+      height:437
     },
     {
       id: '6',
@@ -46,7 +46,7 @@ const data = {
       item: 'TVs',
       size: 'large',
       width:390,
-      height:1164
+      height:564
     },
     {
       id: '7',
@@ -54,7 +54,7 @@ const data = {
       item: 'Accesories',
       size: 'small',
       width:390,
-      height:644
+      height:344
     },
     {
       id: '8',
@@ -62,7 +62,7 @@ const data = {
       item: 'Books',
       size: 'medium',
       width:390,
-      height:837
+      height:437
     },
     {
       id: '9',
@@ -70,7 +70,7 @@ const data = {
       item: 'Fruits & Vegetables',
       size: 'large',
       width:390,
-      height:1164
+      height:564
     },
   ],
 

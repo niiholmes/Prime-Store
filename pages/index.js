@@ -15,13 +15,13 @@ export default function Home() {
         <title>Prime/Store</title>
       </Head>
 
-      <h4 className="text-3xl ml-2 mt-14 text-slate-800 font-medium">
+      <h4 className="text-3xl ml-5 mt-14 mb-4 text-slate-800 font-medium">
         Prime Store.{' '}
         <span className="text-gray-400">
           The best place to buy the things you love.
         </span>
       </h4>
-      <div style={pin_container} className="grid grid-cols-2 w-screen m-0 p-0 ">
+      <div style={pin_container} className="grid grid-cols-2 gap-2 mx-2 w-screen m-0 p-0 ">
         {data.categories.map((category) => (
           <Pins
             img={category.img}
@@ -34,7 +34,7 @@ export default function Home() {
         ))}
       </div>
 
-      <h6 className="text-2xl mt-0 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-20 ml-5 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
           Take a look at what is new, right now.
