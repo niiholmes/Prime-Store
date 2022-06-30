@@ -2,75 +2,63 @@ const data = {
   categories: [
     {
       id: '1',
-      img: '/assets/r500.jpeg',
+      img: '/assets/sneaks.JPG',
       item: 'Sneakers',
-      size: 'small',
-      width:390,
-      height:344
+
     },
     {
       id: '2',
-      img: '/assets/apparel.jpeg',
+      img: '/assets/clothes.JPG',
       item: 'Apparels',
-      size: 'medium',
-      width:390,
-      height:437
+
+    
     },
     {
       id: '3',
-      img: '/assets/aw.jpeg',
+      img: '/assets/watch.JPG',
       item: 'Watches',
-      size: 'large',
-      width:390,
-      height:564
+
     },
     {
       id: '4',
-      img: '/assets/iphone12.jpeg',
+      img: '/assets/phones.JPG',
       item: 'Phones',
-      size: 'small',
-      width:390,
-      height:344
+ 
     },
     {
       id: '5',
-      img: '/assets/mac.jpeg',
+      img: '/assets/lap.JPG',
       item: 'Laptops',
-      size: 'medium',
-      width:390,
-      height:437
+
+ 
     },
     {
       id: '6',
-      img: '/assets/tv.jpeg',
+      img: '/assets/tv.JPG',
       item: 'TVs',
-      size: 'large',
-      width:390,
-      height:564
+
+ 
     },
     {
       id: '7',
-      img: '/assets/accessories.jpeg',
+      img: '/assets/accessories.JPG',
       item: 'Accesories',
-      size: 'small',
-      width:390,
-      height:344
+
+   
     },
     {
       id: '8',
-      img: '/assets/books.jpeg',
+      img: '/assets/bks.JPG',
       item: 'Books',
-      size: 'medium',
-      width:390,
-      height:437
+
+
     },
     {
       id: '9',
-      img: '/assets/fv.jpeg',
+      img: '/assets/fav.JPG',
       item: 'Fruits & Vegetables',
-      size: 'large',
-      width:390,
-      height:564
+
+
     },
   ],
 
@@ -85,7 +73,7 @@ const data = {
       image: '/assets/iphone13.jpeg',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10
+      countInStock: 10,
     },
 
     {
@@ -98,7 +86,7 @@ const data = {
       image: '/assets/r500.jpeg',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10
+      countInStock: 10,
     },
     {
       id: '3',
@@ -110,7 +98,7 @@ const data = {
       image: '/assets/tv.jpeg',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10
+      countInStock: 10,
     },
     {
       id: '4',
@@ -122,7 +110,7 @@ const data = {
       image: '/assets/fv.jpeg',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10
+      countInStock: 10,
     },
   ],
 };

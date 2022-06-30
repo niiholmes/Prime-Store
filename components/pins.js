@@ -2,39 +2,24 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Pins({ img, item, size, width, height }) {
+export default function Pins({ img, item,}) {
   return (
     <>
-      <div
-        className=" my-4 mx-2 p-0 rounded-2xl bg-white drop-shadow-sm  hover:drop-shadow-xl liftOffAnimation"
-        style={{ ...styles[size] }}
-      >
+      <div className=" my-5 mx-1 p-0 rounded-2xl  bg-white drop-shadow-sm  hover:drop-shadow-xl liftOffAnimation">
         <Link href="#">
           <a>
             <Image
               src={img}
-              width={width}
-              height={height}
+              width={300}
+              height={390}
               alt="categories"
-              className="object-contain"
+              layout='responsive'
+              className="object-cover rounded-2xl "
             />
           </a>
         </Link>
-        <h4 className="text-center text-xs relative bottom-4 z-10  ">{item}</h4>
-    
+        <h4 className="text-left text-xs relative top-6 pl-2">{item}</h4>
       </div>
-      </>
+    </>
   );
 }
-
-const styles = {
-  small: {
-    gridRowEnd: 'span 8',
-  },
-  medium: {
-    gridRowEnd: 'span 10',
-  },
-  large: {
-    gridRowEnd: 'span 12',
-  },
-};

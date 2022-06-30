@@ -21,7 +21,7 @@ export default function Home() {
           The best place to buy the things you love.
         </span>
       </h4>
-      <div style={pin_container} className="grid grid-cols-2 gap-2 mx-2 w-screen m-0 p-0 ">
+      <div className="grid grid-cols-2  mr-4 ml-4  ">
         {data.categories.map((category) => (
           <Pins
             img={category.img}
@@ -75,9 +75,7 @@ export default function Home() {
   );
 }
 
-const pin_container = {
-  gridAutoRows: '10px',
-};
+
 
 // export async function getServerSideProps(){
 //   await db.connect();
