@@ -5,7 +5,7 @@ import React, { useContext } from 'react';
 import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
 
- function CartPage() {
+function CartPage() {
   const router = useRouter;
   const { state, dispatch } = useContext(Store);
   const {
@@ -16,15 +16,29 @@ import dynamic from 'next/dynamic';
     dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
   };
 
-
   const updateCartHandler = (item, qty) => {
     const quantity = Number(qty);
-    dispatch({type: 'CART_ADD_ITEM', payload: {...item, quantity}})
-  }
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
+  };
   return (
     <div className="my-5 mx-5">
       <Link className=" text-xs font-bold" href="/">
-        <a className=" font-bold text-xs">back to shopping</a>
+        <a className=" font-bold text-xs">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M7 16l-4-4m0 0l4-4m-4 4h18"
+            />
+          </svg>
+        </a>
       </Link>
       <h1 className="mb-10 text-sm text-right mr-5 mt-5 ">Review your Bag</h1>
       {cartItems.length === 0 ? (
@@ -52,7 +66,10 @@ import dynamic from 'next/dynamic';
                 </Link>
                 <div className="flex justify-evenly mt-5">
                   <h4 className=" text-sm f">
-                    <select value={item.quantity} onChange={(e) => updateCartHandler(item, e.target.value)}>
+                    <select
+                      value={item.quantity}
+                      onChange={(e) => updateCartHandler(item, e.target.value)}
+                    >
                       {[...Array(item.countInStock).keys()].map((x) => (
                         <option key={x + 1} value={x + 1}>
                           {x + 1}
@@ -91,4 +108,4 @@ import dynamic from 'next/dynamic';
   );
 }
 
-export default dynamic(() => Promise.resolve(CartPage), {ssr:false})
+export default dynamic(() => Promise.resolve(CartPage), { ssr: false });
