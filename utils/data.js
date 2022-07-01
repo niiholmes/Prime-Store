@@ -91,7 +91,7 @@ const data = {
       image: '/assets/iphone_13.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10,
+      countInStock: 20,
     },
 
     {
@@ -104,7 +104,7 @@ const data = {
       image: '/assets/yzy_top2.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10,
+      countInStock: 20,
     },
     {
       id: '3',
@@ -116,7 +116,7 @@ const data = {
       image: '/assets/sapiens.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10,
+      countInStock: 20,
     },
     {
       id: '4',
@@ -128,7 +128,7 @@ const data = {
       image: '/assets/yzy_top.JPG',
       description:
         'loremOfficia elit laborum ad nostrud consectetur id nulla nostrud anim. Sint duis exercitation cupidatat ad nulla. Ex do ad aliquip veniam in quis culpa adipisicing pariatur.Lorem amet culpa veniam officia aliqua. Nisi ullamco ipsum reprehenderit ut velit. Elit sit ex consectetur veniam eu elit adipisicing id voluptate tempor elit elit in duis.',
-      countInStock: 10,
+      countInStock: 20,
     },
   ],
 };

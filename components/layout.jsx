@@ -1,7 +1,9 @@
+
 import Footer from "./footer.js";
 import Navbar from "./navbar.jsx";
 
 const Layout = ({ children }) => {
+  
   return (
     <div>
       <Navbar />
