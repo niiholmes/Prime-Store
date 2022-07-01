@@ -20,6 +20,11 @@ const DisplayCard = ({ product_name, slug, brief, tagline, image, price }) => {
           />
         </a>
       </Link>
+      <Link href={`/product/${slug}`}>
+          <a><button className=" w-2/3 bg-blue-400 rounded-xl  p-3 my-5 text-xs text-gray-200 ">
+            LEARN MORE
+          </button></a>
+        </Link>
     </div>
   );
 };
