@@ -1,15 +1,17 @@
 import Layout from '../components/layout';
 import '../styles/globals.css';
 import { StoreProvider } from '../utils/Store';
-
-function MyApp({ Component, pageProps }) {
+import { SessionProvider } from 'next-auth/react';
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <StoreProvider>
-      <Layout>
-        {' '}
-        <Component {...pageProps} />{' '}
-      </Layout>
-    </StoreProvider>
+    <SessionProvider session={session}>
+      <StoreProvider>
+        <Layout>
+          {' '}
+          <Component {...pageProps} />{' '}
+        </Layout>
+      </StoreProvider>
+    </SessionProvider>
   );
 }
 
