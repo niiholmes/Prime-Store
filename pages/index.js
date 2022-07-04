@@ -5,10 +5,12 @@ import data from '../utils/data';
 import HelpCard from '../components/helpCard';
 import HelpCardMini from '../components/helpCardMini';
 import QuickLinks from '../components/quickLinks';
+import Product from '../models/Product';
+import db from '../utils/db';
 
 import Pins from '../components/pins';
 
-export default function Home() {
+export default function Home({products}) {
   return (
     <div>
       <Head>
@@ -42,7 +44,7 @@ export default function Home() {
       </h6>
       {
         <div className="item-slider">
-          {data.products.map((product) => (
+          { products.map((product) => (
             <DisplayCard
               key={product.id}
               slug={product.slug}
@@ -77,13 +79,13 @@ export default function Home() {
 
 
 
-// export async function getServerSideProps(){
-//   await db.connect();
-//   const items = await Item.find({}).lean();
-//   await db.disconnect();
-//   return{
-//     props:{
-//       items: items.map(db.convertDocToObj),
-//     }
-//   }
-// }
+export async function getServerSideProps(){
+  await db.connect();
+  const products = await Product.find().lean();
+  await db.disconnect();
+  return{
+    props:{
+      products : products.map(db.convertDocToObj),
+    }
+  }
+}
