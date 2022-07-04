@@ -5,11 +5,10 @@ import { useForm } from 'react-hook-form';
 import CheckoutWizard from '../components/CheckoutWizard';
 import { Store } from '../utils/Store';
 
-
 export default function ShippingPage() {
   const {
     handleSubmit,
-    register, 
+    register,
     formState: { errors },
     setValue,
   } = useForm();
@@ -17,15 +16,15 @@ export default function ShippingPage() {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
   const { shippingAddress } = cart;
-const router = useRouter();
+  const router = useRouter();
 
-useEffect(() => {
-setValue('fullName', shippingAddress.fullName);
-setValue('address', shippingAddress.address);
-setValue('city', shippingAddress.city);
-setValue('postalCode', shippingAddress.postalCode);
-setValue('country', shippingAddress.country);
-},[setValue, shippingAddress]);
+  useEffect(() => {
+    setValue('fullName', shippingAddress.fullName);
+    setValue('address', shippingAddress.address);
+    setValue('city', shippingAddress.city);
+    setValue('postalCode', shippingAddress.postalCode);
+    setValue('country', shippingAddress.country);
+  }, [setValue, shippingAddress]);
 
   const submitHandler = ({ fullName, address, city, postalCode, country }) => {
     dispatch({
@@ -53,17 +52,19 @@ setValue('country', shippingAddress.country);
     <div>
       <CheckoutWizard activeStep={1} />
       <form
-        className="mx-auto max-w-screen-md"
+        className="mx-auto max-w-screen-md ml-6"
         onSubmit={handleSubmit(submitHandler)}
       >
-        <h1 className="mb-4 text-xl">shipping address</h1>
+        <h1 className="mb-4 text-xsm">Shipping Address</h1>
         <div className="mb-4">
-          <label htmlFor="fullName">Fullname</label>
+          <label htmlFor="fullName" className="text-xs font-bold">
+            Name
+          </label>
           <input
-            className="w-full"
+            className="w-full border mr-5 text-xs h-10 "
             id="fullName"
             autoFocus
-            {...register('fullname', {
+            {...register('fullName', {
               required: 'please enter full name',
             })}
           />
@@ -72,9 +73,11 @@ setValue('country', shippingAddress.country);
           )}
         </div>
         <div className="mb-4">
-          <label htmlFor="address">Address</label>
+          <label htmlFor="address" className="text-xs font-bold">
+            Address
+          </label>
           <input
-            className="w-full"
+            className="w-full border mr-5 text-xs h-10 "
             id="address"
             autoFocus
             {...register('address', {
@@ -90,9 +93,11 @@ setValue('country', shippingAddress.country);
           )}
         </div>
         <div className="mb-4">
-          <label htmlFor="city">City</label>
+          <label htmlFor="city" className="text-xs font-bold">
+            City
+          </label>
           <input
-            className="w-full"
+            className="w-full border mr-5 text-xs h-10 "
             id="city"
             autoFocus
             {...register('city', {
@@ -104,9 +109,11 @@ setValue('country', shippingAddress.country);
           )}
         </div>
         <div className="mb-4">
-          <label htmlFor="postalCode">postal code</label>
+          <label htmlFor="postalCode" className="text-xs font-bold">
+            postal code
+          </label>
           <input
-            className="w-full"
+            className="w-full border mr-5 text-xs h-10 "
             id="postalCode"
             autoFocus
             {...register('postalCode', {
@@ -118,9 +125,11 @@ setValue('country', shippingAddress.country);
           )}
         </div>
         <div className="mb-4">
-          <label htmlFor="country">country</label>
+          <label htmlFor="country" className="text-xs font-bold">
+            country
+          </label>
           <input
-            className="w-full"
+            className="w-full border mr-5 text-xs h-10 "
             id="country"
             autoFocus
             {...register('country', {
@@ -132,7 +141,9 @@ setValue('country', shippingAddress.country);
           )}
         </div>
         <div className="mb-4 flex justify-between">
-          <button className="primary-button">next</button>
+          <button className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs mt-4 ">
+            Next
+          </button>
         </div>
       </form>
     </div>
