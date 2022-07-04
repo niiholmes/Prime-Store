@@ -87,7 +87,7 @@ export default function LoginPage() {
             )}
           </div>
           <div className="mb-4 ">
-            <button className="w-2/3 bg-yellow-500 rounded-xl  p-2  text-xs mt-4">
+            <button className="w-full bg-yellow-500 rounded-xl  p-2  text-xs mt-4">
               Login
             </button>
           </div>

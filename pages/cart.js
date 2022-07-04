@@ -6,7 +6,7 @@ import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
 
 function CartPage() {
-  const router = useRouter;
+  const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const {
     cart: { cartItems },
@@ -93,14 +93,14 @@ function CartPage() {
             {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
           </div>
           <div className="text-center">
-            <a>
+            
               <button
                 onClick={() => router.push('login?redirect=/shipping')}
                 className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs mt-10 "
               >
                 CHECK OUT
               </button>
-            </a>
+            
           </div>
         </div>
       )}

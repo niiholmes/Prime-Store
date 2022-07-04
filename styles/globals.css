@@ -2,58 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.footnote{
-    font-size: 8px;
+.footnote {
+  font-size: 8px;
 }
 
 .liftOffAnimation {
-    /* padding: 15px;  */
-    border: 1px solid #eee;  
-    transition: all .3s ease-in-out;
-  }
-  
-  .liftOffAnimation:hover {
-    transform: translate3d(0px, -2px, 0px);
-  }
+  /* padding: 15px;  */
+  border: 1px solid #eee;
+  transition: all 0.3s ease-in-out;
+}
 
+.liftOffAnimation:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
 
-  .product-slider{
-    max-height: 200px;
-    display: flex;
-    overflow-x: auto;
+.product-slider {
+  max-height: 200px;
+  display: flex;
+  overflow-x: auto;
+}
 
-  }
+.product-slider::-webkit-scrollbar {
+  width: 0;
+}
 
-  .product-slider::-webkit-scrollbar{
-    width: 0;
-  }
+.product-element {
+  min-width: 180px;
+  height: 180;
+  text-align: center;
+}
 
-  .product-element{
-    min-width: 180px;
-    height: 180;
-    text-align: center;
-  }
+.item-slider {
+  max-height: 640px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 
+.item-slider::-webkit-scrollbar {
+  width: 0;
+}
 
-  .item-slider{
-    max-height: 640px;
-    display: flex;
-    overflow-x: auto;
-    overflow-y:hidden
-  }
+.item-element {
+  min-width: 270px;
+  height: 180;
+  text-align: center;
+}
 
-  .item-slider::-webkit-scrollbar{
-    width: 0;
-  }
+.dropdown-link {
+  @apply flex p-2 hover:bg-gray-200;
+}
 
-  .item-element{
-    min-width: 270px;
-    height: 180;
-    text-align: center;
-  }
-
-
-
- 
+a {
+  @apply text-blue-500 hover:text-blue-800;
+}
