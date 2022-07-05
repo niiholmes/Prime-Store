@@ -78,3 +78,4 @@ export default function PaymentPage() {
     </div>
   );
 }
+PaymentPage.auth =true;
