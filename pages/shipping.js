@@ -61,7 +61,7 @@ export default function ShippingPage() {
             Name
           </label>
           <input
-            className="w-full border mr-5 text-xs h-10 "
+            className="w-2/3 border mr-5 text-xs h-10 "
             id="fullName"
             autoFocus
             {...register('fullName', {
@@ -77,7 +77,7 @@ export default function ShippingPage() {
             Address
           </label>
           <input
-            className="w-full border mr-5 text-xs h-10 "
+            className="w-2/3 border mr-5 text-xs h-10 "
             id="address"
             autoFocus
             {...register('address', {
@@ -97,7 +97,7 @@ export default function ShippingPage() {
             City
           </label>
           <input
-            className="w-full border mr-5 text-xs h-10 "
+            className="w-2/3 border mr-5 text-xs h-10 "
             id="city"
             autoFocus
             {...register('city', {
@@ -113,7 +113,7 @@ export default function ShippingPage() {
             Postal code
           </label>
           <input
-            className="w-full border mr-5 text-xs h-10 "
+            className="w-2/3 border mr-5 text-xs h-10 "
             id="postalCode"
             autoFocus
             {...register('postalCode', {
@@ -129,7 +129,7 @@ export default function ShippingPage() {
             Country
           </label>
           <input
-            className="w-full border mr-5 text-xs h-10 "
+            className="w-2/3 border mr-5 text-xs h-10 "
             id="country"
             autoFocus
             {...register('country', {
@@ -141,7 +141,7 @@ export default function ShippingPage() {
           )}
         </div>
         <div className="mb-4 flex justify-between">
-          <button className=" w-full bg-yellow-500 rounded-xl  p-3  text-xs mt-4 ">
+          <button className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs mt-4 ">
             Next
           </button>
         </div>
