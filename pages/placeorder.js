@@ -30,6 +30,7 @@ export default function PlaceOrderPage() {
   }, [paymentMethod, router]);
 
   const [loading, setLoading] = useState(false);
+
   const placeOrderHandler = async () => {
     try {
       setLoading(true);
@@ -89,7 +90,7 @@ export default function PlaceOrderPage() {
               </div>
             </div>
             <div className="ml-5 border rounded-md mr-5 p-3">
-              <h2 className="text-xs font-bold mb-3">Ordered Items</h2>
+              <h2 className="text-xs font-bold mb-3">Ordered Item(s)</h2>
               {cartItems.map((item) => (
                 <div key={item._id} className="">
                   <Link href={`/produc/${item.slug}`}>
@@ -116,30 +117,30 @@ export default function PlaceOrderPage() {
                 </div>
               ))}
             </div>
-            <div className="">
-              <h2 className="">Order Summary</h2>
+            <div className="ml-5 border rounded-md mr-5 p-3 mt-4">
+              <h2 className="text-xs font-bold mb-3">Order Summary</h2>
               <ul>
                 <li>
-                  <div className="">
-                    <div className="">Items</div>
-                    <div className="">${itemsPrice}</div>
+                  <div className="mb-3">
+                    <div className="text-xs">Item(s)</div>
+                    <div className="text-xs">${itemsPrice}</div>
                   </div>
                 </li>
                 <li>
-                  <div className="">
-                    <div className="">Tax</div>
-                    <div className="">${taxPrice}</div>
+                  <div className="mb-3">
+                    <div className="text-xs">Tax</div>
+                    <div className="text-xs">${taxPrice}</div>
                   </div>
                 </li>
                 <li>
-                  <div className="">
-                    <div className="">Total</div>
-                    <div className="">${totalPrice}</div>
+                  <div className="mb-3">
+                    <div className="text-xs font-extrabold">Total</div>
+                    <div className="text-xs">${totalPrice}</div>
                   </div>
                 </li>
                 <li>
                   <button
-                    className=""
+                    className="w-full bg-yellow-500 rounded-xl  p-3  text-xs mt-4 "
                     disable={loading}
                     onClick={placeOrderHandler}
                   >

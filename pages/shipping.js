@@ -110,7 +110,7 @@ export default function ShippingPage() {
         </div>
         <div className="mb-4">
           <label htmlFor="postalCode" className="text-xs font-bold">
-            postal code
+            Postal code
           </label>
           <input
             className="w-full border mr-5 text-xs h-10 "
@@ -126,7 +126,7 @@ export default function ShippingPage() {
         </div>
         <div className="mb-4">
           <label htmlFor="country" className="text-xs font-bold">
-            country
+            Country
           </label>
           <input
             className="w-full border mr-5 text-xs h-10 "
@@ -141,7 +141,7 @@ export default function ShippingPage() {
           )}
         </div>
         <div className="mb-4 flex justify-between">
-          <button className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs mt-4 ">
+          <button className=" w-full bg-yellow-500 rounded-xl  p-3  text-xs mt-4 ">
             Next
           </button>
         </div>
