@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useReducer } from 'react';
-import Layout from '../../components/Layout';
 import { getError } from '../../utils/error';
 
 function reducer(state, action) {
@@ -57,7 +56,7 @@ function OrderPage() {
   } = order;
 
   return (
-    <Layout title={`Order ${orderId}`}>
+    <div title={`Order ${orderId}`}>
       <h1 className="mb-4 text-xl">{`Order ${orderId}`}</h1>
       {loading ? (
         <div>Loading...</div>
@@ -162,7 +161,7 @@ function OrderPage() {
           </div>
         </div>
       )}
-    </Layout>
+    </div>
   );
 }
 
