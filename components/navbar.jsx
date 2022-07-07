@@ -47,7 +47,7 @@ const logoutClickHandler = () => {
                 </DropdownLink>
               </Menu.Item>
               <Menu.Item>
-                <DropdownLink className="dropdown-link" href="/profile">
+                <DropdownLink className="dropdown-link" href="/login">
                   <a
                     className="dropdown-link"
                     href="#"

@@ -10,20 +10,20 @@ import db from '../utils/db';
 
 import Pins from '../components/pins';
 
-export default function Home({products}) {
+export default function Home({ products }) {
   return (
-    <div className='ml-10'>
+    <div className="ml-5">
       <Head>
         <title>Prime/Store</title>
       </Head>
 
-      <h4 className="text-3xl ml-5 mt-14 mb-4 text-slate-800 font-medium">
+      <h4 className="text-2xl  mt-14 mb-4 text-slate-800 font-medium">
         Prime Store.{' '}
         <span className="text-gray-400">
           The best place to buy the things you love.
         </span>
       </h4>
-      <div className="grid mobile:grid-cols-2  mr-4 ml-4 tablet:grid-cols-3 desktop:grid-cols-5 ">
+      <div className="grid grid-cols-2  mr-4  tablet:grid-cols-3 desktop:grid-cols-5 ">
         {data.categories.map((category) => (
           <Pins
             img={category.img}
@@ -36,7 +36,7 @@ export default function Home({products}) {
         ))}
       </div>
 
-      <h6 className="text-2xl mt-20 ml-5 text-slate-800 font-medium">
+      <h6 className="text-2xl mt-20 text-slate-800 font-medium">
         The latest.
         <span className="text-gray-400">
           Take a look at what is new, right now.
@@ -44,7 +44,7 @@ export default function Home({products}) {
       </h6>
       {
         <div className="item-slider">
-          { products.map((product) => (
+          {products.map((product) => (
             <DisplayCard
               key={product.id}
               slug={product.slug}
@@ -77,15 +77,13 @@ export default function Home({products}) {
   );
 }
 
-
-
-export async function getServerSideProps(){
+export async function getServerSideProps() {
   await db.connect();
   const products = await Product.find().lean();
   await db.disconnect();
-  return{
-    props:{
-      products : products.map(db.convertDocToObj),
-    }
-  }
+  return {
+    props: {
+      products: products.map(db.convertDocToObj),
+    },
+  };
 }
