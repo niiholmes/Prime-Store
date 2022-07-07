@@ -30,12 +30,12 @@ const ProductPage = (props) => {
   };
 
   return (
-    <div className=" desktop:w-4/5mt-7 text-sm my-5 mx-5 font-bold">
+    <div className=" desktop:w-4/5 mt-7 text-sm my-5 mx-5 font-bold">
       <Link href="/">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 desktop:ml-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -50,7 +50,7 @@ const ProductPage = (props) => {
         </a>
       </Link>
 
-      <div className="grid grid-cols-1  rounded-2xl my-5 mx-5 ">
+      <div className="grid grid-cols-1   rounded-2xl my-5 mx-5 tablet:mx-40 desktop:ml-96 ">
         <div className="">
           <Image
             src={product.image}
@@ -62,24 +62,24 @@ const ProductPage = (props) => {
         </div>
       </div>
 
-      <div className=" mt-7 font-medium ">
-        <h1 className="text-center text-gray-500 mb-4">
+      <div className=" mt-7 font-medium  ">
+        <h1 className="text-center text-gray-500 mb-4 desktop:ml-44">
           {product.product_name}
         </h1>
-        <h4 className="font-bold pl-4 mb-1 font-mono text-yellow-600">
+        <h4 className=" desktop:ml-40 font-bold pl-4 mb-1 font-mono text-yellow-600">
           ${product.price}
         </h4>
-        <h4 className="font-bold pl-4 ">Description:</h4>
-        <h4 className="text-xs text-justify p-4 text-gray-400">
+        <h4 className="font-bold pl-4 desktop:ml-40   ">Description:</h4>
+        <h4 className="text-xs text-justify desktop:ml-40  p-4 text-gray-400">
           {product.description}
         </h4>
-        <h4 className="pl-4 text-xs text-gray-400">{product.tagline}</h4>
+        <h4 className="pl-4 text-xs text-gray-400 desktop:ml-40 ">{product.tagline}</h4>
       </div>
       <div className="my-14  w-full text-center">
         <Link href="#">
           <a>
             <button
-              className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs "
+              className=" w-2/3 bg-yellow-500 rounded-xl  p-3  text-xs desktop:ml-40  "
               onClick={addToCartHandler}
             >
               ADD TO BAG

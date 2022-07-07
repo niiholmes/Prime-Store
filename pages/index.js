@@ -12,7 +12,7 @@ import Pins from '../components/pins';
 
 export default function Home({ products }) {
   return (
-    <div className="ml-5">
+    <div className="ml-5 desktop:ml-14">
       <Head>
         <title>Prime/Store</title>
       </Head>

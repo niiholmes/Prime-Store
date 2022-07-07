@@ -128,7 +128,7 @@ const data = {
       slug: 'yeezy-t-shirt',
       product_name: 'YEEZY SZN T-SHIRT',
       category: 'Apparels',
-      tagline: 'Full of natural goodness.',
+      tagline: 'Keepin it real.',
       brief: 'Now in Prime Stores',
       price: 50,
       image: '/assets/yzy_top.JPG',
