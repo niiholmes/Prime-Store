@@ -9,7 +9,7 @@ const HelpCard = () => {
           <h4 className="text-gray-200  mt-2  mb-4 text-2xl">
             Shop one on one with a Virtual Specialist 
           </h4>
-          <Image src='/assets/siri-live.gif' width={600} height={300} alt="products" className="object-contain " />
+          <Image src='/assets/siri.webp' width={600} height={300} alt="products" className="object-contain " />
         </a>
       </Link>
     </div>
