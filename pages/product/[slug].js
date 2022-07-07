@@ -30,7 +30,7 @@ const ProductPage = (props) => {
   };
 
   return (
-    <div className="mt-7 text-sm my-5 mx-5 font-bold">
+    <div className=" desktop:w-4/5mt-7 text-sm my-5 mx-5 font-bold">
       <Link href="/">
         <a>
           <svg

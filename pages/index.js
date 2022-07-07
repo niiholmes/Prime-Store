@@ -12,7 +12,7 @@ import Pins from '../components/pins';
 
 export default function Home({products}) {
   return (
-    <div>
+    <div className='ml-10'>
       <Head>
         <title>Prime/Store</title>
       </Head>
@@ -23,7 +23,7 @@ export default function Home({products}) {
           The best place to buy the things you love.
         </span>
       </h4>
-      <div className="grid grid-cols-2  mr-4 ml-4  ">
+      <div className="grid mobile:grid-cols-2  mr-4 ml-4 tablet:grid-cols-3 desktop:grid-cols-5 ">
         {data.categories.map((category) => (
           <Pins
             img={category.img}
